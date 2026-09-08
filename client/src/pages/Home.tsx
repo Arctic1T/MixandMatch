@@ -136,8 +136,11 @@ const copy: Record<Language, Copy> = {
   },
 };
 
+const usesGitHubPages = import.meta.env.BASE_URL === "/MixandMatch/";
+const publicAsset = (name: string) => `${import.meta.env.BASE_URL}${name}`;
+
 const ASSETS = {
-  logo: "/manus-storage/image2_0f1a77ae.png",
+  logo: usesGitHubPages ? publicAsset("brand-logo.png") : "/manus-storage/image2_0f1a77ae.png",
   strawberry: "/manus-storage/image3_577e14a4.png",
   cookies: "/manus-storage/image4_eb42a3fb.png",
   waffleTreat: "/manus-storage/image5_2955b4e4.png",
@@ -150,7 +153,7 @@ const ASSETS = {
   fruitPrep: "/manus-storage/mix-match-fruit-prep_7f6ce883.jpg",
   paper: "/manus-storage/mix-match-paper-texture_34b077b0.jpg",
   fruitSticker: "/manus-storage/mix-match-fruit-sticker_57922086.png",
-  fruitMark: "/manus-storage/mix-match-fruit-mark_06311542.png",
+  fruitMark: usesGitHubPages ? publicAsset("fruit-mark.svg") : "/manus-storage/mix-match-fruit-mark_06311542.png",
   galleryPinkSmoothie: "/manus-storage/mix-match-gallery-smoothie-pink_7c1df939.png",
   galleryGreenSmoothie: "/manus-storage/mix-match-gallery-smoothie-green_b2e4703c.png",
   galleryWaffles: "/manus-storage/mix-match-gallery-waffles_d439451e.jpeg",
