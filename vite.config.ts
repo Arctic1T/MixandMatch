@@ -153,7 +153,7 @@ function vitePluginManusDebugCollector(): Plugin {
 const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(), vitePluginManusDebugCollector()];
 
 export default defineConfig({
-  base: process.env.GITHUB_PAGES === "true" ? "/mix-and-match-cafe/" : "/",
+  base: process.env.GITHUB_PAGES === "true" ? "/MixandMatch/" : "/",
   plugins,
   resolve: {
     alias: {

@@ -23,7 +23,7 @@ pnpm run build
 
 The repository includes `.github/workflows/deploy-pages.yml`. In the repository settings, open **Pages** and choose **GitHub Actions** as the publishing source. Each push to `main` builds the static frontend and publishes `dist/public`.
 
-The Pages build uses the repository base path `/mix-and-match-cafe/`. The app also uses publicly hosted image URLs from the Manus storage paths included in the source; move those assets to an independent CDN or storage bucket if this repository needs to be fully independent of Manus.
+The Pages build uses the repository base path `/MixandMatch/`. The app also uses publicly hosted image URLs from the Manus storage paths included in the source; move those assets to an independent CDN or storage bucket if this repository needs to be fully independent of Manus.
 
 ## Content notes
 
