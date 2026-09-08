@@ -7,9 +7,12 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
 
 function Router() {
+  const basePath = import.meta.env.BASE_URL.replace(/\/$/, "");
+  const homePath = basePath ? `${basePath}/` : "/";
+
   return (
     <Switch>
-      <Route path="/" component={Home} />
+      <Route path={homePath} component={Home} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>
