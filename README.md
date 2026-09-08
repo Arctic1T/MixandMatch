@@ -1,5 +1,9 @@
 # Mix and Match Cafe
 
+**Live website:** https://arctic1t.github.io/MixandMatch/
+
+This repository is the source-code backup; the link above opens the actual bilingual cafe website.
+
 A bilingual English/Spanish cafe website for Mix and Match in Ciudad Sandino, Nicaragua. The site uses a Vite + React frontend, responsive menu and gallery sections, a website-first language chooser, scroll motion, and React Bits-inspired glow and text-loop interactions.
 
 ## Local development
